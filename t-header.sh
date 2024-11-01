@@ -73,7 +73,7 @@ fi
 }
 # note this is only print 7 charecters
 echo "";
-echo -e "\e[1;34m[*] \e[32minstall packages....\e[0m";
+echo -e "\e[1;34m[*] \e[32m𝐢𝐧𝐬𝐭𝐚𝐥𝐥 𝐩𝐚𝐜𝐤𝐚𝐠𝐞𝐬....\e[0m";
 echo "";
 (apt update -y && apt upgrade -y) &> /dev/null;
 apt install figlet pv ncurses-utils binutils coreutils wget git zsh termux-api procps gawk termux-tools -y &> /dev/null;
@@ -117,7 +117,7 @@ if [[ ${#PROC} -gt 8 ]]; then
 	sleep 4
 	clear
 echo -e "\033[01;32m
-Remo773 (2020)
+𝐒𝐀𝐈𝐌𝐔𝐌 𝐒𝐀𝐁𝐈𝐊 (𝐒𝟒𝐁𝟏𝐊)
 
 	𝐦𝐞𝐧𝐮
 +---------------------------*/
@@ -126,7 +126,7 @@ Remo773 (2020)
 𝐒𝟒𝐁𝟏𝐊  𝐔𝐒𝐄𝐑𝐒 𝐎𝐍𝐋𝐘....
 \033[0m";
 	echo ""
-	echo -e "\e[1;34m \033[32mPlease enter less than 9 characters...\033[0m"
+	echo -e "\e[1;34m \033[32m𝐏𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫 𝐥𝐞𝐬𝐬 𝐭𝐡𝐚𝐧 𝟗 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬...\033[0m"
 	echo ""
 else
 	ok=1
@@ -306,7 +306,7 @@ done
 	
 	
 else
-	echo -e "\e[1;34m[*] \033[32mHope you like my work..\033[0m"
+	echo -e "\e[1;34m[*] \033[32m◦•●◉✿ 𝐇𝐨𝐩𝐞 𝐲𝐨𝐮 𝐥𝐢𝐤𝐞 𝐦𝐲 𝐰𝐨𝐫𝐤 ✿◉●•◦..\033[0m"
 	exit
 fi
 exit 0
