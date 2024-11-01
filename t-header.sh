@@ -10,21 +10,21 @@ spin () {
 
 local pid=$!
 local delay=0.25
-local spinner=( '█■■■■' '■█■■■' '■■█■■' '■■■█■' '■■■■█' )
+local spinner=(  '𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐢𝐧𝐠' '█■■■■' '■█■■■' '■■█■■' '■■■█■' '■■■■█' )
 
 while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
 
 for i in "${spinner[@]}"
 do
 	tput civis
-	echo -ne "\033[34m\r[*] Downloading..please wait.........\e[33m[\033[32m$i\033[33m]\033[0m   ";
+	echo -ne "\033[34m\r[•] 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 📥  𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 ⏳.........\e[33m[\033[32m$i\033[33m]\033[0m   ";
 	sleep $delay
 	printf "\b\b\b\b\b\b\b\b";
 done
 done
 printf "   \b\b\b\b\b"
 tput cnorm
-printf "\e[1;33m [Done]\e[0m";
+printf "\e[1;33m [𝐃𝐨𝐧𝐞☑️]\e[0m";
 echo "";
 
 }
@@ -80,7 +80,7 @@ apt install figlet pv ncurses-utils binutils coreutils wget git zsh termux-api p
 rubygem_d &> /dev/null
 termux-wake-lock;
 if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
-	echo -e "\e[1;34m[*] \033[32mRemo773.flf figlet font is present\033[0m";
+	echo -e "\e[1;34m[*] \033[32m 𝐅𝐨𝐧𝐭 𝐢𝐬 𝐩𝐫𝐞𝐬𝐞𝐧𝐭\033[0m";
 	sleep 4
 else
 wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
